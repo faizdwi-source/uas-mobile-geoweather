@@ -86,7 +86,7 @@ export default function HomeScreen() {
     const namaKota = keyword.trim();
 
     if (!namaKota) {
-      tampilkanWarning("Masukkan nama kota terlebih dahulu.");
+      tampilkanWarning("Silahkan masukkan nama kota terlebih dahulu.");
       return;
     }
 
