@@ -403,7 +403,7 @@ export default function HomeScreen() {
               <Text style={styles.emptyIcon}>🌍</Text>
 
               <Text style={styles.emptyTitle}>
-                Belum ada data cuaca
+                Belum ada data cuaca yang terdaftar
               </Text>
 
               <Text style={styles.emptyDescription}>
