@@ -45,13 +45,30 @@ const weatherApi = axios.create({
   timeout: 10000,
 });
 
+// REQUEST INTERCEPTOR
+geocodingApi.interceptors.request.use((config) => {
+  console.log("Geocoding Request:", config.url);
+  return config;
+});
+
+weatherApi.interceptors.request.use((config) => {
+  console.log("Weather Request:", config.url);
+  return config;
+});
+
+// RESPONSE INTERCEPTOR
+weatherApi.interceptors.response.use((response) => {
+  console.log("Weather Response:", response.data);
+  return response;
+});
+
 const getErrorMessage = (error: unknown): string => {
   if (axios.isAxiosError(error)) {
     if (
       error.code === "ECONNABORTED" ||
       error.code === "ETIMEDOUT"
     ) {
-      return "Permintaan terlalu lama. Periksa koneksi internet.";
+      return "Permintaan terlalu lama. Periksa koneksi internet anda.";
     }
 
     if (!error.response) {
