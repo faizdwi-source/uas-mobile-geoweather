@@ -68,7 +68,7 @@ const getErrorMessage = (error: unknown): string => {
       error.code === "ECONNABORTED" ||
       error.code === "ETIMEDOUT"
     ) {
-      return "Permintaan terlalu lama. Periksa koneksi internet anda.";
+      return "Permintaan terlalu lama. Silahkan Periksa koneksi internet anda.";
     }
 
     if (!error.response) {
