@@ -72,8 +72,8 @@ export default function LoginScreen() {
         pesan =
           "Terlalu banyak percobaan login. Silakan coba kembali beberapa saat lagi.";
       } else if (error.code === "auth/network-request-failed") {
-        pesan =
-          "Koneksi internet bermasalah. Periksa koneksi anda ";
+        pesan = "Koneksi internet bermasalah. Periksa koneksi.";
+
       } else if (error.code === "auth/api-key-not-valid") {
         pesan =
           "Konfigurasi Firebase tidak valid. Periksa API key Firebase.";
