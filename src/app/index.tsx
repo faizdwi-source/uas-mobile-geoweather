@@ -99,7 +99,7 @@ export default function LoginScreen() {
           <Text style={styles.title}>GeoWeather</Text>
 
           <Text style={styles.subtitle}>
-            Masuk untuk melihat cuaca dan menyimpan lokasi favorit.
+            Masuk untuk melihat cuaca dan menyimpan lokasi favorit anda.
           </Text>
 
           <Text style={styles.label}>Email</Text>
