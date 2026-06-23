@@ -75,10 +75,10 @@ const getErrorMessage = (error: unknown): string => {
       return "Tidak dapat terhubung ke layanan cuaca.";
     }
 
-    return `Layanan cuaca mengalami kesalahan (${error.response.status}).`;
+    return `Layanan cuaca sedang mengalami kesalahan (${error.response.status}).`;
   }
 
-  return "Terjadi kesalahan yang tidak diketahui.";
+  return "Terjadi kesalahan yang tidak diketahui sekarang.";
 };
 
 export const searchCity = async (
