@@ -36,7 +36,7 @@ const handleRegister = async () => {
     !password ||
     !konfirmasiPassword
   ) {
-    const pesan = "Lengkapi seluruh kolom pendaftaran.";
+    const pesan = "Mohon isi semua kolom terlebih dahulu!";
 
     if (Platform.OS === "web") {
       window.alert(pesan);
