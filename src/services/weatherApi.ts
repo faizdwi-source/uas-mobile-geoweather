@@ -108,7 +108,7 @@ export const getCurrentWeather = async (
   longitude: number
 ): Promise<WeatherResponse> => 
   
-  // request data cuaca
+  // request data cuaca/Menembak API Cuaca Real-Time
   {
   try {
     const response = await weatherApi.get<WeatherResponse>(

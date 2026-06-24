@@ -25,7 +25,7 @@ export type FavoriteCity = {
   weatherCode: number;
   createdAt?: unknown;
 };
-// menyimpan kota favorit
+// menyimpan kota favorit dan Manipulasi Data Baru
 export const saveFavorite = async (
   userId: string,
   city: CityResult,
