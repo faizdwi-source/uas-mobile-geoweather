@@ -100,7 +100,7 @@ const handleRegister = async () => {
 
     if (Platform.OS === "web") {
       window.alert(
-        "Pendaftaran berhasil. Harap login menggunakan email dan password Anda."
+        "Pendaftaran berhasil. login menggunakan email dan password Anda."
       );
 
       router.replace("/");
