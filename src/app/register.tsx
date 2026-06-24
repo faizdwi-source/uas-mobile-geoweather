@@ -41,7 +41,7 @@ const handleRegister = async () => {
     if (Platform.OS === "web") {
       window.alert(pesan);
     } else {
-      Alert.alert("Data belum lengkap", pesan);
+      Alert.alert("Terdapat Data yanng belum lengkap", pesan);
     }
 
     return;
