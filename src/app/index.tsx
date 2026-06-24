@@ -157,7 +157,7 @@ export default function LoginScreen() {
               disabled={loading}
             >
               <Text style={styles.registerLink}>
-                Daftar sekarang
+                Daftar Sekarang
               </Text>
             </Pressable>
           </View>
