@@ -36,12 +36,12 @@ const handleRegister = async () => {
     !password ||
     !konfirmasiPassword
   ) {
-    const pesan = "Lengkapi seluruh kolom pendaftaran.";
+    const pesan = "Mohon isi semua kolom terlebih dahulu!";
 
     if (Platform.OS === "web") {
       window.alert(pesan);
     } else {
-      Alert.alert("Data belum lengkap", pesan);
+      Alert.alert("Terdapat Data yanng belum lengkap", pesan);
     }
 
     return;
@@ -100,14 +100,14 @@ const handleRegister = async () => {
 
     if (Platform.OS === "web") {
       window.alert(
-        "Pendaftaran berhasil. Silakan login menggunakan email dan password Anda."
+        "Pendaftaran berhasil. login menggunakan email dan password Anda."
       );
 
       router.replace("/");
     } else {
       Alert.alert(
         "Pendaftaran berhasil",
-        "Silakan login menggunakan email dan password Anda.",
+        "login menggunakan email dan password Anda.",
         [
           {
             text: "Ke halaman login",
