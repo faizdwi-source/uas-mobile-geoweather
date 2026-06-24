@@ -39,7 +39,7 @@ export default function RootLayout() {
       <Stack.Screen
         name="favorites"
         options={{
-          title: "Kota Favorit",
+          title: "KOTA FAVORTI",
           headerBackVisible: false,
         }}
       />
