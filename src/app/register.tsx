@@ -107,7 +107,7 @@ const handleRegister = async () => {
     } else {
       Alert.alert(
         "Pendaftaran berhasil",
-        "Silakan login menggunakan email dan password Anda.",
+        "login menggunakan email dan password Anda.",
         [
           {
             text: "Ke halaman login",
