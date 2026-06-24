@@ -32,7 +32,7 @@ export const saveFavorite = async (
   weather: WeatherResponse
 ): Promise<void> => {
   if (!userId) {
-    throw new Error("Pengguna belum login.");
+    throw new Error("Pengguna Belum Login.");
   }
 
   const favoriteId = String(city.id);
