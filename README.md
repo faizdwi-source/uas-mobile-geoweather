@@ -60,7 +60,7 @@ Sesuai kriteria penilaian praktikum, berikut adalah 3 fitur utama yang diimpleme
 ### Fitur 1 — Autentikasi Pengguna (Login & Register)
 * **File Source:** `src/app/auth/register.tsx` & `src/app/auth/login.tsx`
 * **Alur Demo:** Fitur pendaftaran akun menggunakan fungsi bawaan `createUserWithEmailAndPassword`. Setelah proses pendaftaran atau masuk tervalidasi via `signInWithEmailAndPassword`, sesi pengguna dikunci otomatis menggunakan listener global `onAuthStateChanged` agar user langsung diarahkan ke beranda utama setiap kali aplikasi dibuka kembali.
-* **Penanggung Jawab:** Raihan Maulana Asyam
+* **Penanggung Jawab:** Atta Rizal Aurel Fajri
 
 ### Fitur 2 — Pencarian Data Cuaca Terintegrasi (Axios Interceptors)
 * **File Source:** `src/services/weatherApi.ts` & `src/app/(tabs)/index.tsx`
@@ -70,7 +70,7 @@ Sesuai kriteria penilaian praktikum, berikut adalah 3 fitur utama yang diimpleme
 ### Fitur 3 — Penyimpanan Kota Favorit (Cloud Firestore Storage)
 * **File Source:** `src/services/favoriteService.ts` & `src/app/(tabs)/favorites.tsx`
 * **Alur Demo:** Aplikasi mengeksekusi fungsi asinkron penulisan dokumen baru ke Cloud Firestore menggunakan metode penambahan data berbasis ID unik pengguna. Halaman favorites menyajikan rekap data kota pilihan secara real-time, di mana pengguna juga dapat melakukan penghapusan item koordinat favorit langsung dari memori database cloud.
-* **Penanggung Jawab:** Atta Rizal Aurel Fajri
+* **Penanggung Jawab:** Raihan Maulana Asyam
 
 ---
 
